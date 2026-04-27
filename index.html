@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arrastra y Aprende PRO</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+<div class="container">
+
+    <h2>🎯 Arrastra las palabras correctas</h2>
+
+    <div class="game-container">
+
+        <!-- IZQUIERDA -->
+        <div class="game-area">
+
+            <div class="left">
+
+                <div class="dropzone" data-correct="AutoridadEducativaLocal">
+                    <span></span>
+                    <p>Diseñar programas de formación en materia de prevención, atención y medidas de no repetición del acoso escolar.</p>
+                </div>
+
+                  <div class="dropzone" data-correct="PersonalFSupervisor">
+                    <span></span>
+                    <p>Verificar que en los planteles a su cargo se realicen las acciones señaladas en el protocolo local de erradicación del acoso escolar.</p>
+                </div>
+
+                <div class="dropzone" data-correct="PersonalFDireccion">
+                    <span></span>
+                    <p>Convocar al colegiado escolar para que diseñe e implemente las medidas de prevención, atención y no repetición del acoso escolar.</p>
+                </div>
+
+                  <div class="dropzone" data-correct="PersonalDocente">
+                    <span></span>
+                    <p>Implementar las acciones de prevención, atención y no repetición en casos de acoso escolar.</p>
+                </div>
+
+                <div class="dropzone" data-correct="PersonalApoyo">
+                    <span></span>
+                    <p>Capacitarse para asegurar la protección y el cuidado de los alumnos.</p>
+                </div>
+
+                <div class="dropzone" data-correct="PadresFamilia">
+                    <span></span>
+                    <p>Conocer el protocolo local de erradicación del acoso escolar en Educación Básica.</p>
+                </div>
+
+            </div>
+
+            <div class="buttons-area">
+
+    <div class="buttons">
+        <button id="checkBtn" onclick="checkAnswers()" disabled>Verificar</button>
+        <button onclick="resetGame()">Reiniciar</button>
+    </div>
+
+    <div id="result" class="result-message"></div>
+
+</div>
+
+        </div>
+
+        <!-- DERECHA -->
+        <div class="right-panel">
+
+            <!-- Banco de palabras -->
+            <div class="right" id="wordBank">
+
+                <div class="draggable" draggable="true" data-value="PersonalDocente">
+                    Personal docente
+                </div>
+                <div class="draggable" draggable="true" data-value="PersonalFDireccion">
+                    Personal con funciones de dirección
+                </div>
+                <div class="draggable" draggable="true" data-value="AutoridadEducativaLocal">
+                    Autoridad Educativa Local 
+                </div>
+                <div class="draggable" draggable="true" data-value="PadresFamilia">
+                    Padres de familia
+                </div>
+
+                <div class="draggable" draggable="true" data-value="PersonalFSupervisor">
+                   Personal con funciones de supervisión
+                </div>
+                <div class="draggable" draggable="true" data-value="PersonalApoyo">
+                    Personal de apoyo, asesor técnico pedagógico y otras figuras
+                </div>
+
+                
+
+            </div>
+
+            <!-- Resultado oculto -->
+            <div id="result" class="result-box hidden"></div>
+
+        </div>
+
+    </div>
+
+</div>
+  
+<script src="script.js"></script>
+</body>
+</html>
