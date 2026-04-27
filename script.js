@@ -41,7 +41,7 @@ document.querySelectorAll(".dropzone").forEach(zone => {
 function checkCompletion(){
 
     const total = document.querySelectorAll(".dropzone span .draggable").length;
-    checkBtn.disabled = total !== 3;
+    checkBtn.disabled = total !== 6;
 
 }
 
@@ -70,7 +70,7 @@ function checkAnswers(){
 
     result.className = "result-message";
 
-    if(correct === 3){   // cambia según cantidad total
+    if(correct === 6){   // cambia según cantidad total
         result.innerHTML = "✔ ¡EXCELENTE!";
         result.classList.add("result-success");
     }else{
